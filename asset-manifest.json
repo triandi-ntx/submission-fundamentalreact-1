@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/submission-fundamentalreact-1/static/js/main.c9840bd9.js",
+    "main.js": "/submission-fundamentalreact-1/static/js/main.9882311f.js",
     "static/js/787.3063a1d2.chunk.js": "/submission-fundamentalreact-1/static/js/787.3063a1d2.chunk.js",
     "index.html": "/submission-fundamentalreact-1/index.html",
-    "main.c9840bd9.js.map": "/submission-fundamentalreact-1/static/js/main.c9840bd9.js.map",
+    "main.9882311f.js.map": "/submission-fundamentalreact-1/static/js/main.9882311f.js.map",
     "787.3063a1d2.chunk.js.map": "/submission-fundamentalreact-1/static/js/787.3063a1d2.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c9840bd9.js"
+    "static/js/main.9882311f.js"
   ]
 }
