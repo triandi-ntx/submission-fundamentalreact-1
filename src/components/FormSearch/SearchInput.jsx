@@ -1,15 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { LocaleConsumer } from '../../context/groupcontext/LocaleContext';
 
 function SearchInput({ keyword, keywordChange }) {
   return (
-    <input
-      className="input"
-      type="text"
-      placeholder="Find Note Tittle"
-      value={keyword}
-      onChange={(event) => keywordChange(event.target.value)}
-    />
+    <LocaleConsumer>
+      {({ locale }) => {
+        return (
+          <input
+            className="input"
+            type="text"
+            placeholder={locale === 'id' ? 'Cari catatan' : 'Find Note'}
+            value={keyword}
+            onChange={(event) => keywordChange(event.target.value)}
+          />
+        );
+      }}
+    </LocaleConsumer>
   );
 }
 

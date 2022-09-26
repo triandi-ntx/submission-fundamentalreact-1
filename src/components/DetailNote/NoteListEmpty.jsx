@@ -1,17 +1,32 @@
 import PropTypes from 'prop-types';
+import { LocaleConsumer } from '../../context/groupcontext/LocaleContext';
 
 function NoteListEmpty({ isArchived }) {
   return (
-    <div className="section">
-      <div className="content">
-        <h2>{isArchived ? 'empty archived' : 'empy note'}</h2>
-      </div>
-    </div>
+    <LocaleConsumer>
+      {({ locale }) => {
+        return (
+          <div className="section">
+            <div className="content">
+              <h2>
+                {isArchived
+                  ? locale === 'id'
+                    ? 'Arsip kosong'
+                    : 'Empty Archived'
+                  : locale === 'id'
+                  ? 'Tidak ada catatan'
+                  : 'Empty Note'}
+              </h2>
+            </div>
+          </div>
+        );
+      }}
+    </LocaleConsumer>
   );
 }
 
 NoteListEmpty.propTypes = {
-  isArchived: PropTypes.bool.isRequired,
+  isArchived: PropTypes.bool,
 };
 
 export default NoteListEmpty;

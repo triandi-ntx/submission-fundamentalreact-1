@@ -12,10 +12,19 @@ function App() {
       <Navigation />
       <main>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/notes/archived" element={<ArchivePage />} />
-          <Route path="/notes/new" element={<NewNotePage />} />
-          <Route path="/notes/:id" element={<NoteDetailPage />} />
+          <Route path="/submission-fundamentalreact-1" element={<HomePage />} />
+          <Route
+            path="/submission-fundamentalreact-1/notes/archived"
+            element={<ArchivePage />}
+          />
+          <Route
+            path="/submission-fundamentalreact-1/notes/new"
+            element={<NewNotePage />}
+          />
+          <Route
+            path="/submission-fundamentalreact-1/notes/:id"
+            element={<NoteDetailPage />}
+          />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
